@@ -16,7 +16,19 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === 'MIT') {
+      return 'MIT';
+  } else if (license === 'ISC') {
+      return 'ISC';
+   } else if (license === 'Apache 2.0') {
+      return 'Apache 2.0';
+   } else if (license === 'Mozilla') {
+      return 'Mozilla';
+   } else {
+      return '';
+   }
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
