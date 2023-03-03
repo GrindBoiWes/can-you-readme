@@ -50,13 +50,13 @@ const questions = [
         type: 'input',
         name: 'contributions',
         message: 'List any contributions on this repo'
-    }
+    },
 
     {
         type: 'list',
         name: 'liscence',
         message: 'Please select a liscence to apply',
-        choices: ['None', 'MIT', 'ISC', 'Apache'],
+        choices: ['None', 'MIT', 'ISC', 'Apache 2.0', 'Mozilla'],
         validate: (value) => {
             if (value) {return true} else {return 'Please choose a liscence'}
         }
@@ -66,7 +66,7 @@ const questions = [
         type: 'input',
         name: 'github',
         message: 'Enter a link to this projects repository',
-    }
+    },
 
     {
         type: 'input',
